@@ -10,7 +10,7 @@ import sys
 
 # Step 2: Sentence Segmentation
 def stanza_syl_2_lines_array(input_df, intermediate_path, file_name, segmnt_intermediate_save=True):
-    
+
     """" Function for parsing the syllabi and save one row for each line.
          - Inputs:
          -- input_df: The dataframe containing the course syllabi text and their ids.

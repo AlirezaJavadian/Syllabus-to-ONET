@@ -1,8 +1,7 @@
 ## *** Paths
 
 # Input folder path
-# inputs_path = './inputs'
-inputs_path = '/ihome/mrfrank/alj112/Projects/Notebooks/syllabus_2_ONET/inputs'
+inputs_path = './inputs'
 
 # Input syllabi names files in CSV format.
 # Each record should contains the following two columns "syllabus_id" (integer), "syllabus_text" (string).

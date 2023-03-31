@@ -13,15 +13,13 @@ comp_meth = None
 
 # O*NET folder path
 # Note: Please do not delete the content of this folder
-# onet_path = './ONET_Data'
-onet_path = '/ihome/mrfrank/alj112/Projects/Notebooks/syllabus_2_ONET/ONET_Data'
+onet_path = './ONET_Data'
 
 # Output folder path
-# outputs_path ='./outputs'
-outputs_path = '/ihome/mrfrank/alj112/Projects/Notebooks/syllabus_2_ONET/outputs'
+outputs_path ='./outputs'
+
 # Intermediate results
-# intermediate_path ='./outputs/intermediate_results'
-intermediate_path = '/ihome/mrfrank/alj112/Projects/Notebooks/syllabus_2_ONET/outputs/intermediate_results'
+intermediate_path ='./outputs/intermediate_results'
 
 ## *** Other Settings
 

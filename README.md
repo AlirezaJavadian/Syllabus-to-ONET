@@ -1,11 +1,28 @@
 # Syllabus-to-O\*NET
 
-In this work, we developed the “Syllabus to O\*NET” pipeline as a framework that enables policymakers and decision makers to extract O*NET skills from course syllabi.
+
+To predict career mobility, earnings, and future skill acquisition we need to develop a framework capable of unpacking the individual’s skills.
+To do so, in this work we develop a natural language processing framework to identify the O\*NET Detailed Work Activities (DWAs) and Tasks from course descriptions.
 
 ## Description:
 
+The following figure provides a high-level representation of the proposed system.
+
+<p align="center">
+
+  <img width=95% height=60% src="https://github.com/AlirezaJavadian/Syllabus-to-ONET/blob/17d5d45b80280534c0e2891f748944b653a02a56/syll_2_onet_workflow.png">
+
+</p>
+
+In order to extract the skills from course syllabi, at first we needed to remove the non-relevant text (such as the course schedule and policy) from the syllabi.
+
+Each course syllabus record has "Course Description" metadata which is plain text. 
+In other words, it doesn't have any structure which helps us to separate the "general" related sentences such as office hours, integrity statement, etc. from the "outcome" related sentences which contain the course.
+Since there is no benchmark-labeled dataset for this purpose, we construct the following pipeline.
 
 
+- **Sentence Segmentation:** At first, we utilize sentence segmentation provided by [Stanza](https://doi.org/10.48550/arXiv.2003.07082) which breaks a text into its sentences. *Note: This step is optional. If the course descriptions contain only the learning materials and do not need any cleaning -> with_bow_cleaning = False*
+- **Human-in-the-loop Sentence Tagging:** In the next step, we create the following two lists for labeling. One containing the terms/phrases that mostly appear in "General" sentences, i.e. non-content related sentences (e.g., Plagiarism, Attendance, Office hour, etc.). The other contains the "Outcome" related terms (e.g., Analyze, Versus, Outcome, etc.). After some iterations of checking over $6,000$ course syllabi, the resulting General list contains 356 terms and phrases and the Content related list contains $51$ terms and phrases. It is worth mentioning that, while building the lists, we carefully revise the lists so that we do not remove the sentences from fields of study such as Education and Psychology which might contain General terms as their actual content-related. In the next step, for each sentence, we add two binary columns as General and Outcome. Then, if the sentence contains any of the corresponding terms, we change the value to 1. As a result, each sentence could belong to one of the categories reported in the following table.
 
 
 

@@ -10,7 +10,7 @@ The following figure provides a high-level representation of the proposed system
 
 <p align="center">
 
-  <img width=95% height=60% src="https://github.com/AlirezaJavadian/Syllabus-to-ONET/blob/17d5d45b80280534c0e2891f748944b653a02a56/syll_2_onet_workflow.png">
+  <img width=95% height=60% src="https://github.com/AlirezaJavadian/Syllabus-to-ONET/blob/605a4d31c556edfeb17a8f61421c9284766e8f0f/syll_2_onet_workflow.png">
 
 </p>
 

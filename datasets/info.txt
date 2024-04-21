@@ -1,0 +1,10 @@
+Please upload the following four datasets here.
+
+
+- syllabi.gzip
+- detailed_work_activities_scores.gzip
+- abilities_scores.gzip
+- tasks_scores.gzip
+
+The datasets can be accessed here:
+https://doi.org/10.6084/m9.figshare.25632429

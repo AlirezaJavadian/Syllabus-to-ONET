@@ -1,3 +1,15 @@
+# Peer-reviewed publication
+
+Please see the paper for more information.
+
+[https://www.nature.com/articles/s41597-024-03931-8#citeas](https://doi.org/10.1038/s41597-024-03931-8)
+
+# Citaiton
+
+Javadian Sabet, A., Bana, S.H., Yu, R. et al. Course-Skill Atlas: A national longitudinal dataset of skills taught in U.S. higher education curricula. Sci Data 11, 1086 (2024). https://doi.org/10.1038/s41597-024-03931-8
+
+
+
 # Syllabus-to-O\*NET
 
 
